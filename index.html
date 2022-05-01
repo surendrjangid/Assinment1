@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to remove spaces from
+		a string using JavaScript?
+	</title>
+</head>
+
+<body>
+	
+	
+	<b>
+		How to remove spaces from
+		a string using JavaScript?
+	</b>
+	
+	<p>
+		Original string is:
+		Board infiniti
+	</p>
+	
+	<p>
+		New String is:
+		<span class="output"></span>
+	</p>
+	
+	<button onclick="removeSpaces()">
+		Remove Spaces
+	</button>
+	
+	<script type="text/javascript">
+		function removeSpaces() {
+			originalText =
+				"	Board infiniti";
+		
+			removedSpacesText =
+				originalText.split(" ").join("");
+		
+			document.querySelector('.output').textContent
+					= removedSpacesText;
+		}
+	</script>
+</body>
+
+</html>
